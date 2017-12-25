@@ -4,14 +4,17 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-repeat:no-repeat;
-    background: #56ab2f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-repeat: no-repeat;
+    
+    /* fallback for old browsers */
+    background: #56ab2f; 
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #a8e063, #56ab2f);
     
     color: white;
-    font-family: Nunito, sans-serif;
+    font-family: Nunito, Tamoha;
 }
 
 h1{
