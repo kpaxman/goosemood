@@ -1,10 +1,9 @@
+//Variables
 var date = new Date();
 var month = date.getMonth() + 1;
 var day = date.getDate();
-
 var mood;
 var moodText = document.getElementById("moodText");
-var actionText = document.getElementById("actionText");
 
 //Calculate mood by season
 if (month == 2 && date >= 15) {
@@ -25,18 +24,13 @@ if (month == 2 && date >= 15) {
     
 //Update display text
 if (mood == "gone") {
-        moodText.textContent = "The geese have migrated South...";
-        actionText.textContent = "You are safe for now."; 
+        moodText.textContent = "The geese have migrated South... You are safe for now.";
 } else if (mood == "arriving") {
-        moodText.textContent = "The geese are on their way back!";
-        actionText.textContent = "Prepare yourself";    
+        moodText.textContent = "The geese are on their way back! Prepare yourself.";
 } else if (mood == "aggressive") {
-        moodText.textContent = "It's breeding season, and the geese are sensitive.";
-        actionText.textContent = "Avoid eye contact at all costs and stay AWAY.";    
+        moodText.textContent = "It's breeding season, and the geese are sensitive. Avoid interaction AT ALL COSTS.";
 } else if (mood == "poopy") {
-        moodText.textContent = "The geese are taking care of their ducklings.";
-        actionText.textContent = "Keep your distance and watch out for poop.";  
-} else if (mood == "ok") {
-        moodText.textContent = "The geese are feeling OK.";
-        actionText.textContent = "They'll hiss less (maybe) (on average).";  
+        moodText.textContent = "The geese are taking care of their ducklings. Watch out for green poop.";
+} else  {
+        moodText.textContent = "The geese are feeling decent- but don't try cuddling up to one.";
 }

@@ -5,7 +5,6 @@ html{
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    
     /* fallback for old browsers */
     background: #56ab2f; 
     /* Chrome 10-25, Safari 5.1-6 */
@@ -18,7 +17,8 @@ html{
 }
 
 h1{
-    font-size: 24px;
+    position: absolute;
+    font-size: 14px;
     margin-left: 8px;
 }
 
@@ -28,19 +28,19 @@ p{
     font-size: 20px;
 }
 
-#center{ 
+.center{ 
     position: absolute;
-    top: 30%;
-    left: 43%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
 }
 
-#footer{
+.footer{
     position: absolute;
     bottom: 0;
-    right: 10px;
-    width: 100px;
-    text-align:right;
-    
-    font-size: 14px;
+    right: 14px;
+    text-align: right;
+    font-size: 10px;
 }
