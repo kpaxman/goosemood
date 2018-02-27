@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-    
+    <?php
+    require('script.php');
+    ?>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +14,12 @@
     <body>
         <h1>UW GooseMood</h1>
         <div class="center">
-        <img id= "gooseImg" src="img/errorGoose.png" alt="Where is the goose?" width="300" height ="300">
-        <p id="moodText">Something wrong HONK happened.</p>
+        <img id="gooseImg" src="<?php echo $gooseImg; ?>" alt="Where is the goose?" width="300" height ="300">
+        <p id="moodText"><?php echo $moodText; ?></p>
         </div>
     </body>
     <footer>
-        <h2 class="footer">By Amy Liang</h2>
-        <script src="script.js"></script>
+        <h2 class="footer">Originally by Amy Liang, modified for PHP by Kevin Paxman</h2>
     </footer>
 </html>
 
