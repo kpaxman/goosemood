@@ -7,7 +7,7 @@ var moodText = document.getElementById("moodText");
 var gooseImg = document.getElementById("gooseImg");
 
 //Calculate mood by season
-if (month == 2 && date >= 15) {
+if (month == 2 && day >= 15) {
     mood = "arriving"; 
 } else if (month == 3) {
     mood = "arriving";
